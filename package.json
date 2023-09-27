@@ -1,0 +1,11 @@
+{
+  "name": "sistema-php",
+  "version": "1.0.0",
+  "description": "menu-consultas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
