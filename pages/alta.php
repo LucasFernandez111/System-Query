@@ -43,7 +43,15 @@
 
 
     <!-- FORMULARIO ALTA -->
-
+    <!-- <?php if (isset($_SESSION['message'])): ?>
+        <div class="alert alert-<?= $_SESSION['message_type'] ?>" role="alert">
+            <?= $_SESSION['message'] ?>
+        </div>
+    <?php else: ?>
+        <div class="alert alert-warning" role="alert">
+            ERROR
+        </div> -->
+    <?php endif; ?>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -51,20 +59,21 @@
 
                     <div class="card-body">
                         <h2 class="text-center text-dark">Alta</h2>
-                        <form action="create.php" method="POST">
+                        <form action='../services/create.php' method="POST">
                             <div class="form-group mb-3">
                                 <input type="text" name="name" class="form-control" required placeholder="Name"
                                     autofocus>
                             </div>
                             <div class="form-group mb-3">
-                                <input type="text" name="email" class="form-control" required placeholder="Email">
+                                <input type="email" name="email" class="form-control" required placeholder="Email">
                             </div>
                             <div class="form-group mb-3">
-                                <input type="text" name="curso" class="form-control" required placeholder="Curso">
+                                <input type="number" max="5" name="curso" class="form-control" required
+                                    placeholder="Curso">
                             </div>
 
                             <div class="form-group text-center">
-                                <input type="submit" class="btn btn-primary w-100" value="Dar de Alta">
+                                <input type="submit" class="btn btn-primary w-100" name="submit" value="Dar de Alta">
                             </div>
 
 
