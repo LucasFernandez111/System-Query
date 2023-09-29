@@ -1,3 +1,6 @@
+<?php
+include('../database/db.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,11 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
     <link rel="stylesheet" href="../estilos.css">
 </head>
 
 <body>
+
+
 
 
     <div id="container">
@@ -19,7 +25,7 @@
             <ul>
                 <li><a href='../index.php'>Inicio</a></li>
                 <li><a href="#">Alta<i class="down"></i></a>
-                    <!-- Primer Menu Desplegable -->
+
                     <ul>
 
                         <li><a href="baja.php">Baja</a></li>
@@ -27,12 +33,12 @@
                     </ul>
 
                 <li><a href="#">Consultas <i class="down"></i></a>
-                    <!-- Primer Menu Desplegable -->
+
                     <ul>
                         <li><a href="lista.datos.php">Listado de Datos</a></li>
                         <li><a href="lista.completo.php">Listado Completo</a></li>
                         <li><a href="lista.tablas.php">Listado con tablas</a>
-                            <!-- Segudo Menu Desplegable -->
+
                     </ul>
             </ul>
         </nav>
@@ -42,17 +48,17 @@
     </div>
 
 
-    <!-- FORMULARIO ALTA -->
-    <!-- <?php if (isset($_SESSION['message'])): ?>
-        <div class="alert alert-<?= $_SESSION['message_type'] ?>" role="alert">
-            <?= $_SESSION['message'] ?>
-        </div>
-    <?php else: ?>
-        <div class="alert alert-warning" role="alert">
-            ERROR
-        </div> -->
-    <?php endif; ?>
+
     <div class="container">
+
+        <?php if (isset($_SESSION['message'])): ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+
+                <?= $_SESSION['message'] ?>
+
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <?php session_unset(); endif; ?>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card w-75 mx-auto mt-4 mb-4">
@@ -88,7 +94,8 @@
     </div>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>

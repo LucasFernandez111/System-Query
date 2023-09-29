@@ -2,7 +2,7 @@
 include('../database/db.php');
 
 
-echo $_SESSION['message'];
+
 
 if ($_POST['submit']) {
 
@@ -18,9 +18,12 @@ if ($_POST['submit']) {
 
     }
 
+
     $_SESSION['message'] = 'Alumno dado de alta';
 
-    $_SESSION['message_type'] = 'success';
+
+
+
 
 
     header("Location: ../pages/alta.php");
