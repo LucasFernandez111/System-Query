@@ -7,7 +7,6 @@ $conexion = mysqli_connect(
     'root',
     'rootadmin',
     'iac'
-) or die('Error Conexion DB');
-
+) ;
 
 ?>
