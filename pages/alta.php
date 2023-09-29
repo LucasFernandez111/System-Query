@@ -67,7 +67,7 @@ include('../database/db.php') ?>
                         <h2 class="text-center text-dark">Alta</h2>
                         <form action='../services/create.php' method="POST">
                             <div class="form-group mb-3">
-                                <input type="text" name="name" class="form-control" required placeholder="Name"
+                                <input type="text" name="name" class="form-control" required placeholder="Nombre"
                                     autofocus>
                             </div>
                             <div class="form-group mb-3">

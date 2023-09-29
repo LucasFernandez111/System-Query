@@ -43,7 +43,7 @@
                 <div class="card w-75 mx-auto mt-4 mb-4">
 
                     <div class="card-body">
-                        <h2 class="text-center text-dark">MODIFICAR</h2>
+                        <h2 class="text-center text-dark">Modificar</h2>
                         <form action="">
                             <div class="form-group mb-3">
                                 <input type="text" name="" class="form-control" required placeholder="Name" autofocus>
