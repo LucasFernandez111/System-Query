@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
-/* Default styles for larger screens */
+
 body {
   background: #263c53;
   font-size: 16px;
@@ -63,20 +63,18 @@ nav a:hover {
 a:hover{
   color: white;
 }
-/* Hide Dropdowns by Default */
+lt */
 nav ul ul {
   display: none;
   position: absolute;
-  top: 60px; /* the height of the main nav */
+  top: 60px; 
 }
 
-/* Display Dropdowns on Hover */
 nav ul li:hover > ul {
   display: inherit;
   color: wheat;
 }
 
-/* First Tier Dropdown */
 nav ul ul li {
   width: 170px;
   float: none;
@@ -84,7 +82,7 @@ nav ul ul li {
   position: relative;
 }
 
-/* Second, Third and more Tiers */
+
 nav ul ul ul li {
   position: relative;
   top: -60px;

@@ -59,6 +59,15 @@ include('../database/db.php') ?>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <?php session_unset(); endif; ?>
+
+        <?php if (isset($_SESSION['message_input_vacio'])): ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+
+                <?= $_SESSION['message_input_vacio'] ?>
+
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <?php session_unset(); endif; ?>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card w-75 mx-auto mt-4 mb-4">

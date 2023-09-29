@@ -2,7 +2,10 @@
 include('../database/db.php');
 
 
-
+if (!$_POST['name'] || !$_POST['email'] || !$_POST['curso']) {
+    $_SESSION['message_input_vacio'] = 'Uno o varios de los campos esta vacio';
+    header("Location: ../pages/alta.php");
+}
 
 if ($_POST['submit']) {
 
