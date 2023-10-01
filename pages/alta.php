@@ -46,7 +46,7 @@ include('../database/db.php') ?>
 
 
     </div>
-    <div class="container d-flex justify-content-center align-item-center">
+    <div class="container d-flex justify-content-center col-sm-5 align-item-center">
         <?php if (isset($_SESSION['message'])): ?>
             <div class="alert alert-success alert-dismissible col-sm-10  fade show" role="alert">
 
@@ -80,12 +80,45 @@ include('../database/db.php') ?>
                                 <input type="text" name="name" class="form-control" required placeholder="Nombre"
                                     autofocus>
                             </div>
-                            <div class="form-group mb-3">
+                            <div class="form-group mb-4">
                                 <input type="email" name="email" class="form-control" required placeholder="Email">
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="number" max="5" name="curso" class="form-control" required
-                                    placeholder="Curso">
+
+
+                            <div class="container  text-dark  ">
+                                <div class="row">
+                                    <div class="col-sm-3 ">
+                                        <p class="text-dark text-start text-muted ">CURSO:</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            1
+                                        </label>
+
+                                        <input class="form-check-input" type="radio" name="curso" value="1"
+                                            id="flexRadioDefault1">
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            2
+                                        </label>
+
+                                        <input class="form-check-input" type="radio" name="curso" value="2"
+                                            id="flexRadioDefault1">
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            3
+                                        </label>
+
+                                        <input class="form-check-input" type="radio" name="curso" value="3"
+                                            id="flexRadioDefault1">
+
+                                    </div>
+                                </div>
+
                             </div>
 
                             <div class="form-group text-center">
