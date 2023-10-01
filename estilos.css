@@ -18,7 +18,7 @@ a {
 
 #container {
   margin: 0 auto;
-  
+
 }
 
 p {
@@ -27,10 +27,11 @@ p {
 
 nav {
   margin: 30px auto;
-  background-color: #4fb7f9;
-  width: 30px;
+  background-color: #4fb3f9;
+  width: 600px;
+  border-radius: 30px;
   box-shadow: 0px 3px 20px 3px #162433;
-  width:600px
+
 }
 
 nav ul {
@@ -57,20 +58,20 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #000000;
+  background-color: #141a1f;
 }
 
-a:hover{
+a:hover {
   color: white;
 }
-lt */
+
 nav ul ul {
   display: none;
   position: absolute;
-  top: 60px; 
+  top: 60px;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
   display: inherit;
   color: wheat;
 }
@@ -117,4 +118,3 @@ i {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-

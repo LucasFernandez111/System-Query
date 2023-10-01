@@ -38,7 +38,7 @@
     </div>
 
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card w-75 mx-auto mt-4 mb-4">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 </body>
 
