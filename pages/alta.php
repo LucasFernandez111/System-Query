@@ -9,8 +9,6 @@ include('../database/db.php') ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-
-
     <link rel="stylesheet" href="../estilos.css">
 </head>
 
@@ -48,7 +46,8 @@ include('../database/db.php') ?>
     </div>
     <div class="container d-flex justify-content-center col-sm-5 align-item-center">
         <?php if (isset($_SESSION['message'])): ?>
-            <div class="alert alert-success alert-dismissible col-sm-10  fade show" role="alert">
+            <div class="alert <?= $_SESSION['message_type'] ?> alert-dismissible col-sm-10 fade show" role="alert">
+
 
                 <?= $_SESSION['message'] ?>
 
@@ -56,14 +55,7 @@ include('../database/db.php') ?>
             </div>
             <?php session_unset(); endif; ?>
 
-        <?php if (isset($_SESSION['message_input_vacio'])): ?>
-            <div class="alert alert-danger alert-dismissible col-sm-10 fade show" role="alert">
 
-                <?= $_SESSION['message_input_vacio'] ?>
-
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <?php session_unset(); endif; ?>
     </div>
 
     <div class="container">

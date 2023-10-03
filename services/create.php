@@ -3,7 +3,8 @@ include('../database/db.php');
 
 
 if (!$_POST['name'] || !$_POST['email'] || !$_POST['curso']) {
-    $_SESSION['message_input_vacio'] = 'Uno o varios de los campos esta vacio';
+    $_SESSION['message'] = 'Uno o varios de los campos esta vacio';
+    $_SESSION['message_type'] = 'alert-danger';
 
     header("Location: ../pages/alta.php");
 }
@@ -19,7 +20,8 @@ if ($_POST['submit']) {
 
     $numRows = mysqli_num_rows($resultSelect);
     if ($numRows > 0) {
-        $_SESSION['message_input_vacio'] = 'El Usuario ya se encuentra dado de alta';
+        $_SESSION['message'] = 'El Usuario ya se encuentra dado de alta';
+        $_SESSION['message_type'] = 'alert-warning';
         header("Location: ../pages/alta.php");
 
     } else {
@@ -27,6 +29,7 @@ if ($_POST['submit']) {
         $resultInsert = mysqli_query($conexion, $queryInsert);
 
         $_SESSION['message'] = 'Alumno dado de alta';
+        $_SESSION['message_type'] = 'alert-success';
 
 
         if (!$resultInsert) {
