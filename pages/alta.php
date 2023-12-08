@@ -69,53 +69,24 @@ include('../database/db.php') ?>
                         <h2 class="text-center text-dark">Alta</h2>
                         <form action='../services/create.php' method="POST">
                             <div class="form-group mb-3">
-                                <input type="text" name="name" class="form-control" required placeholder="Nombre"
+                                <input type="text" name="name" class="form-control" required placeholder="NOMBRE"
                                     autofocus>
                             </div>
+                            <div class="form-group mb-3">
+                                <input type="email" name="email" class="form-control" required placeholder="@">
+                            </div>
+
+
+
                             <div class="form-group mb-4">
-                                <input type="email" name="email" class="form-control" required placeholder="Email">
-                            </div>
+
+                                <input type="number" min="1" max="99" placeholder="CURSO" class="form-control mb-4">
 
 
-                            <div class="container  text-dark  ">
-                                <div class="row">
-                                    <div class="col-sm-3 ">
-                                        <p class="text-dark text-start text-muted ">CURSO:</p>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            1
-                                        </label>
-
-                                        <input class="form-check-input" type="radio" name="curso" value="1"
-                                            id="flexRadioDefault1">
-
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            2
-                                        </label>
-
-                                        <input class="form-check-input" type="radio" name="curso" value="2"
-                                            id="flexRadioDefault1">
-
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            3
-                                        </label>
-
-                                        <input class="form-check-input" type="radio" name="curso" value="3"
-                                            id="flexRadioDefault1">
-
-                                    </div>
+                                <div class="form-group text-center">
+                                    <input type="submit" class="btn btn-primary w-100" name="submit"
+                                        value="Dar de Alta">
                                 </div>
-
-                            </div>
-
-                            <div class="form-group text-center">
-                                <input type="submit" class="btn btn-primary w-100" name="submit" value="Dar de Alta">
-                            </div>
 
 
 

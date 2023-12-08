@@ -15,6 +15,13 @@ if ($_POST['submit']) {
     $email = $_POST['email'];
     $curso = $_POST['curso'];
 
+    if ($curso < 0 || $curso > 99) {
+        $_SESSION['message'] = 'El Curso es mayor a 2 digitos';
+        $_SESSION['message_type'] = 'alert-warning';
+        header("Location: ../pages/alta.php");
+
+    }
+
     $querySelect = "SELECT * FROM t_alumnos_del_curso where mail='$email'";
     $resultSelect = mysqli_query($conexion, $querySelect);
 
